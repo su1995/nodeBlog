@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>哈-博客</title>
+</head>
+<body>
+    <img src="./static/img/1.jpg" alt="">
+    <a href="./login.html">哈-登录</a>
+    <script src="./static/js/jquery.min.js"></script>
+    <script>
+            $.ajax({
+                url: 'http://172.20.166.122:8888/users',
+                data: "abc=3",
+                type: "post",
+                success: function(data){
+                    console.log(data, "123");
+                },
+                dataType: 'json'
+            });
+        </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>啊</title>
+</head>
+<body>
+    asdhuasdhasjkdsakdjash<%= title %>
+    <img src="./images/1.jpg" alt="">
+    <script src="./js/jquery.min.js"></script>        
+    <script>
+        $.ajax({
+            url: '/users',
+            data: "abc=3",
+            type: "post",
+            success: function(data){
+                console.log(data, "123");
+            },
+            dataType: 'json'
+        });
+    </script>
+</html>
